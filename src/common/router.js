@@ -61,6 +61,10 @@ export const getRouterData = (app) => {
         import('../layouts/BasicLayout')
       ),
     },
+    '/test/test': {
+      name: '标准列表页',
+      component: dynamicWrapper(app, ['test', 'dictionary'], () => import('../routes/Test/Index')),
+    },
     '/member/membertags': {
       name: '标签设置',
       component: dynamicWrapper(app, ['membertags', 'dictionary'], () => import('../routes/Member/Membertags/Index')),

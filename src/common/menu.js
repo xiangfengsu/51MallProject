@@ -1,5 +1,16 @@
 export const menuData = [
   {
+    name: 'Test',
+    icon: 'book',
+    path: 'test',
+    children: [{
+      name: '标准列表页',
+      path: 'test',
+      menutype:2
+    }]
+  },
+
+  {
     name: '会员管理',
     icon: 'book',
     path: 'member',
@@ -40,13 +51,13 @@ export const menuData = [
       ]
     }],
   },
-  // {
-  //   name: '表单类型',
-  //   icon: 'book',
-  //   path: 'formItemType/formItemTypePage',
-  //   children: [],
-  //   menutype: 2,
-  // },
+  {
+    name: '表单类型',
+    icon: 'book',
+    path: 'formItemType/formItemTypePage',
+    children: [],
+    menutype: 2,
+  },
   {
     name: '权限管理',
     icon: 'setting',

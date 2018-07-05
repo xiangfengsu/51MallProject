@@ -2,10 +2,9 @@ import { menuData } from './common/menu';
 
 const config = {
   title: '营销系统',
-  isLocalMenus: true,
+  isLocalMenus: false,
   localMenus: menuData,
   hasTagsPage: false,
-
   whiteListPath: [
     {
       path: '/account/settings',

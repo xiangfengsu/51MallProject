@@ -129,6 +129,7 @@
         this.modalForm.validateFields((err, fieldsValue) => {
           if (err) return;
           const { showModalType } = this.state;
+          console.log(fieldsValue);
           const picUrl = fieldsValue.picUrl.map(item=>{
             return item.response&&item.response.url || item.url;
           });
